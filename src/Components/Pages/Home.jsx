@@ -11,7 +11,7 @@ const Home = () => {
             <Link to="/" className=" Active schedule text-decoration-none">SCHEDULE</Link>
           </li>
           <li className="category-link">
-            <Link to="/category" className=" categogy text-decoration-none">CATEGORY</Link>
+            <Link to="/category" className=" Active categogy text-decoration-none">CATEGORY</Link>
           </li>
         </ul>
       </nav>

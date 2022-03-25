@@ -4,11 +4,14 @@
 h4{
     font-weight: lighter;
     color: #09C16C;
-    border: 1px solid #09C16C;
+    border: 1px solid #03b66293;
     padding: 0.3rem;
     font-size: 1.3rem;
+    text-align: center;
+    background-color: #0E1224;
 }
 h4:hover{
     color: white;
     background-color: #09C16C;
+    border: 1px solid white;
 }

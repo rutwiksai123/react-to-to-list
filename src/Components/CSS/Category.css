@@ -5,8 +5,8 @@
   height: auto;
   box-shadow: 0 0 3px #bfe2ee;
   padding-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   opacity: 0.9;
 }
