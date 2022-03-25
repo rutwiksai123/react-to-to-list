@@ -1,0 +1,27 @@
+.scheddule_list {
+  background-color: #171b25;
+  width: 35rem;
+  margin: 0.5rem auto;
+  height: auto;
+  box-shadow: 0 0 3px #bfe2ee;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
+
+}
+.add_icon {
+  display: block;
+  margin: auto;
+  border: none;
+  font-size: 2rem;
+  color: white !important;
+  cursor: pointer;
+  transition: 0.5s;
+  background-color: rgb(10, 125, 170);
+}
+.add_icon:hover{
+  color:#276275 !important ;
+  background-color: white;
+}
