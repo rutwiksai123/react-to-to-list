@@ -2,11 +2,11 @@ import React from 'react'
 import "../CSS/CategoryList.css"
 const CategoryCards = ({ taskObj }) => {
   return (
-      <div className='categoryList' >
-          
-              <li >{taskObj.Name} </li>
-        
-      </div>
+    <div className='categoryList' >
+      
+        <h4 >{taskObj.Name} </h4>
+     
+    </div>
   )
 }
 

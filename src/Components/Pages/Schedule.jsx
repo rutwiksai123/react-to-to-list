@@ -7,7 +7,14 @@ import CreateTask from '../../Models/CreateTask';
 
 const Schedule = () => {
 
+  //copy from reactstrap useState
   const [modal, setModal] = useState(false);
+  
+  //set your modal to opposite of previous modal State
+  const toggle = () => {
+    setModal(!modal)
+  }
+
   const[taskList, setTaskList] = useState([]);
 
    useEffect(() =>{
@@ -26,9 +33,6 @@ const Schedule = () => {
     setTaskList(tempList)
   }
 
-  const toggle = () => {
-    setModal(!modal)
-  }
 
   const deleteTask =(index) =>{
     let tempList = taskList
@@ -52,11 +56,11 @@ const Schedule = () => {
       <div className='scheddule_list'>
     
         <FaPlusSquare className="add_icon" onClick={() => setModal(true)} />
-          <div >
+          <div className='card_component'>
           {taskList && taskList.map((obj ,index)=> <Card taskObj = {obj} index={index} deleteTask={deleteTask} updateListArray ={updateListArray}/>) }
           </div >
       </div>
-          
+          {/* passing a props */}
       <CreateTask toggle={toggle} modal={modal} save ={saveTask} />
     </>
   )

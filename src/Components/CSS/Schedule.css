@@ -5,9 +5,7 @@
   height: auto;
   box-shadow: 0 0 3px #bfe2ee;
   padding-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   opacity: 0.9;
 
 }
@@ -24,4 +22,15 @@
 .add_icon:hover{
   color:#276275 !important ;
   background-color: white;
+}
+.card_component{
+  display: flex;
+  flex-direction: column;
+width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .scheddule_list  {
+    width: 98%;
+  }
+
 }
