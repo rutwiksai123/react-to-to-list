@@ -5,7 +5,6 @@ import { Button, Modal,ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 
 const CreateTask = ({ modal, toggle,save }) => {
 
-    
     const [category, setCategory] = useState('');
     const [discription, setDiscription] = useState('');
     
@@ -34,23 +33,11 @@ const CreateTask = ({ modal, toggle,save }) => {
                <form>
                     <div className='form-group'>
                         <label>Task Category</label>
-                        <select class="form-control" id="exampleFormControlSelect1" value={category} onChange = {handleChange} name="category">
-                        <option>just do it !</option>
-                        <option>HTML5</option>
-                        <option>CSS</option>
-                        <option>BOOTSTRAP</option>
-                        <option>JAVASCRIPT</option>
-                        <option>REACTJS</option>
-                        <option>NODEJS</option>
-                        <option>EXPRESSJS</option>
-                        <option>MANGODB</option>
-                        <option>GITHUB</option>
-                        </select>
-                        {/* <input type="text" className='mb-1 form-control' value={category} onChange = {handleChange} name="category"/> */}
+                        <input type="text" className = "form-control" value = {category} onChange = {handleChange} name = "category"/>
                     </div>
                     <div className='from-group'>
                          <label>Task Discription</label>
-                        <textarea   rows="2" className='form-control textArea' value={discription} onChange = {handleChange} name="discription"/>
+                        <textarea rows="2" className='form-control textArea' value={discription} onChange = {handleChange} name="discription"/>
                     </div>
                </form>
            </ModalBody>

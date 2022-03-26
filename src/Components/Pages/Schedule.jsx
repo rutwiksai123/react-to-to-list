@@ -16,6 +16,15 @@ const Schedule = () => {
   }
 
   const[taskList, setTaskList] = useState([]);
+  //Grabbing the array or updating 
+  const saveTask = (taskObj) =>{
+    let tempList = taskList
+    tempList.push(taskObj)
+    localStorage.setItem("taskList", JSON.stringify(tempList))
+    // create task and close the popup
+    setModal(false)
+    setTaskList(tempList)
+  }
 
    useEffect(() =>{
      let arr = localStorage.getItem("taskList")
@@ -25,13 +34,7 @@ const Schedule = () => {
      }
    },[])
   
-  const saveTask = (taskObj) =>{
-    let tempList = taskList
-    tempList.push(taskObj)
-    localStorage.setItem("taskList", JSON.stringify(tempList))
-    setModal(false)
-    setTaskList(tempList)
-  }
+
 
 
   const deleteTask =(index) =>{
@@ -57,6 +60,7 @@ const Schedule = () => {
     
         <FaPlusSquare className="add_icon" onClick={() => setModal(true)} />
           <div className='card_component'>
+            {/*loop over the taskList array */}
           {taskList && taskList.map((obj ,index)=> <Card taskObj = {obj} index={index} deleteTask={deleteTask} updateListArray ={updateListArray}/>) }
           </div >
       </div>

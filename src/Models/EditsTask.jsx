@@ -30,7 +30,7 @@ const EditsTask = ({ modal, toggle,updateTask,taskObj }) => {
 
     useEffect(() =>{
         setCategory(taskObj.Name)
-        setDiscription(taskObj.discription)
+        setDiscription(taskObj.Discription)
     },[])
 
     return (
